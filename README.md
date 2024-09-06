@@ -24,3 +24,7 @@ client2: 192.168.57.102(private) (enp0s3), 192.168.58.102(public) (enp0s8)
 server1: 192.168.56.102
 server2: 192.168.57.3
 ```
+
+```
+ip addr | grep "192.168.56"
+```
