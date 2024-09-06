@@ -28,3 +28,11 @@ server2: 192.168.57.3
 ```
 ip addr | grep "192.168.56"
 ```
+
+```
+root@server1:~ ssh root@192.168.56.102
+root@server2:~ ssh root@192.168.57.3
+
+root@strongswan1:~ ssh centos1@192.168.58.101
+root@strongswan2:~ ssh centos2@192.168.58.102
+```
