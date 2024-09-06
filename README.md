@@ -4,4 +4,5 @@
 dnf install epel-release
 dnf update
 dnf install strongswan strongswan-charon-nm
+sudo yum install libreswan
 ```
