@@ -17,9 +17,10 @@ sudo firewall-cmd --reload
 ```
 
 
-
+```
 client1: 192.168.56.101(private) (enp0s3), 192.168.58.101(public) (enp0s8)
 client2: 192.168.57.102(private) (enp0s3), 192.168.58.102(public) (enp0s8)
 	
 server1: 192.168.56.
 server2: 192.168.57.
+```
