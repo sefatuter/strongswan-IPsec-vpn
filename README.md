@@ -1,12 +1,8 @@
 # strongswan-IPsec-vpn
 
-```
-dnf install epel-release
-dnf update
-dnf install strongswan strongswan-charon-nm
-sudo yum install libreswan
-```
+1. 
 
+2. Set up firewalld configurations on each clients. 
 
 ```
 sudo firewall-cmd --permanent --add-port=80/tcp
@@ -22,6 +18,19 @@ nmcli d
 nmtui
 ```
 
+3.Install& Configure Strongswan on each clients.
+
+```
+dnf install epel-release
+dnf update
+dnf install strongswan strongswan-charon-nm
+sudo yum install libreswan
+```
+
+```
+client1: 192.168.56.104 (private ip) (enp0s3), 192.168.58.5 (public ip) (enp0s8)
+client2: 192.168.57.5 (private ip) (enp0s3), 192.168.58.6 (public ip) (enp0s8)
+```
 
 ```
 client1: 192.168.56.101(private) (enp0s3), 192.168.58.101(public) (enp0s8)
