@@ -63,3 +63,12 @@ root@server2:~ ssh root@192.168.57.3
 root@strongswan1:~ ssh centos1@192.168.58.101
 root@strongswan2:~ ssh centos2@192.168.58.102
 ```
+```
+
+[root@localhost client2]# ip route add 192.168.58.0/24 dev enp0s8
+[root@localhost client2]# sudo firewall-cmd --add-service="ipsec" --permanent
+sudo firewall-cmd --add-service="ike" --permanent
+sudo firewall-cmd --add-service="esp" --permanent
+sudo firewall-cmd --reload
+
+```
