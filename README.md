@@ -16,6 +16,12 @@ sudo firewall-cmd --permanent --add-masquerade
 sudo firewall-cmd --reload
 ```
 
+Extra:
+```
+nmcli d
+nmtui
+```
+
 
 ```
 client1: 192.168.56.101(private) (enp0s3), 192.168.58.101(public) (enp0s8)
