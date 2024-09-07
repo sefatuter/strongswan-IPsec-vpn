@@ -43,6 +43,16 @@ net.ipv4.conf.all.send_redirects = 0
 sysctl -p /etc/sysctl.conf
 ```
 
+```
+systemctl start strongswan
+systemctl enable strongswan
+systemctl restart strongswan
+swanctl --load-all
+swanctl --initiate --child net
+
+tcpdump -i enp0s8 esp
+```
+
 
 ```
 client1: 192.168.56.101(private) (enp0s3), 192.168.58.101(public) (enp0s8)
