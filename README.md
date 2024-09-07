@@ -49,6 +49,7 @@ systemctl enable strongswan
 systemctl restart strongswan
 swanctl --load-all
 swanctl --initiate --child net
+swanctl --list-sas
 
 tcpdump -i enp0s8 esp
 ```
