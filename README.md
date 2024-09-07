@@ -61,7 +61,9 @@ sudo systemctl status firewalld
 sudo firewall-cmd --state
 sudo firewall-cmd --reload
 
-
+firewall-cmd --permanent --direct --passthrough ipv4 -t nat -I POSTROUTING -o enp0s3 -j MASQUERADE -s sit_one_subnet/24
+systemctl restart firewalld
+ip route add 192.168.58.0/24 dev enp0s8 scope link
 ```
 
 
