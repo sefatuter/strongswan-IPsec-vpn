@@ -53,6 +53,16 @@ swanctl --initiate --child net
 tcpdump -i enp0s8 esp
 ```
 
+```
+sudo systemctl start firewalld
+sudo systemctl enable firewalld
+sudo systemctl status firewalld
+sudo firewall-cmd --state
+sudo firewall-cmd --reload
+
+
+```
+
 
 ```
 client1: 192.168.56.101(private) (enp0s3), 192.168.58.101(public) (enp0s8)
