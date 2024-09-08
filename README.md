@@ -50,7 +50,7 @@ systemctl restart strongswan
 swanctl --load-all
 swanctl --initiate --child net
 swanctl --list-sas
-
+swanctl --terminate --ike myvpn
 tcpdump -i enp0s8 esp
 ```
 
